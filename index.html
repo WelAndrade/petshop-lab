@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PetShop Online</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="PetShop" width="120">
+            </a>
+            <form class="form-inline mx-auto my-2 my-lg-0" onsubmit="return searchProduct();">
+                <input class="form-control search-bar" type="search" placeholder="O que seu pet precisa?" id="search-query" aria-label="Buscar">
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-phone"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-heart"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                <li class="nav-item mr-3"><a class="nav-link d-flex align-items-center" href="#"><i class="fas fa-shopping-cart fa-lg"></i></a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link d-flex align-items-center dropdown-toggle" href="#" id="navbarUserDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!-- Círculo com a inicial do usuário -->
+                        <div class="user-initials-circle d-flex justify-content-center align-items-center">
+                            W   
+                        </div>
+                        <span class="ml-2">Welington Andrade</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarUserDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Meus dados</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-map-marker-alt"></i> Endereços</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-paw"></i> Meus pets</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-headset"></i> Atendimento</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Categories Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light categories-menu">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <!-- Menu Cachorro -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarCachorro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cachorro
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarCachorro">
+                        <!-- Submenu Rações -->
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Rações</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="busca.html?Order1=Cachorro&Order2=Ração&Order3=Seca">Ração Seca</a>
+                                <a class="dropdown-item" href="busca.html?Order1=Cachorro&Order2=Ração&Order3=Umida">Ração Úmida</a>
+                                <a class="dropdown-item" href="busca.html?Order1=Cachorro&Order2=Ração&Order3=Mecicamento">Ração Medicamentosa</a>
+                                <a class="dropdown-item" href="busca.html?Order1=Cachorro&Order2=Ração&Order3=Natural">Ração Natural</a>
+                            </div>
+                        </div>
+                        <!-- Submenu Petiscos -->
+                        <a class="dropdown-item" href="#">Petiscos</a>
+                        <a class="dropdown-item" href="#">Higiene e Limpeza</a>
+                        <a class="dropdown-item" href="#">Brinquedos</a>
+                    </div>
+                </li>
+
+                <!-- Menu Gato -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarGato" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gato
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarGato">
+                        <!-- Submenu Rações -->
+                        <div class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">Rações</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="busca.html?Order1=Gato&Order2=Ração&Order3=Seca">Ração Seca</a>
+                                <a class="dropdown-item" href="busca.html?Order1=Gato&Order2=Ração&Order3=Umida">Ração Úmida</a>
+                            </div>
+                        </div>
+                        <a class="dropdown-item" href="#">Petiscos</a>
+                        <a class="dropdown-item" href="#">Higiene e Limpeza</a>
+                        <a class="dropdown-item" href="#">Brinquedos</a>
+                    </div>
+                </li>
+
+                <!-- Menu Promoções -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Promoções</a>
+                </li>
+
+                <!-- Menu Serviços -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarServicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Serviços
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarServicos">
+                        <a class="dropdown-item" href="servico.html">Banho e Tosa</a>
+                        <a class="dropdown-item" href="#">Veterinário</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>O PetShop que tem tudo que você precisa.</h1>
+                    <p>Encontre todos os produtos e serviços que seu pet merece!</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/petshop-hero.png" alt="Petshop Mascots" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pet-categories text-center py-5">
+        <div class="container">
+            <h2>Comprar pelo tipo de Pet</h2>
+            <div class="row justify-content-center">
+                <!-- Cachorro -->
+                <div class="col-md-3">
+                    <a href="busca.html?Order1=Cachorro">
+                        <div class="circle">
+                            <img src="images/dog.png" alt="Cachorro" class="img-fluid">
+                        </div>
+                        <p>Cachorro</p>
+                    </a>
+                </div>
+                <!-- Cat -->
+                <div class="col-md-3">
+                    <a href="busca.html?Order1=Gato">
+                        <div class="circle">
+                            <img src="images/cat.png" alt="Gato" class="img-fluid">
+                        </div>
+                        <p>Gato</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light py-4 text-center">
+        <p>&copy; 2024 PetShop | Desenvolvido por Welington Andrade</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+    <script src="js/busca.js"></script> 
+
+</body>
+</html>

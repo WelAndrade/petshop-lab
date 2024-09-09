@@ -1,0 +1,158 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Ração Seca Nutrilus Pro+ Frango & Carne para Cães Adultos de Raças Médias e Grandes",
+            "Order1": "Cachorro",
+            "Order2": "Ração",
+            "Order3": "Seca",
+            "valor": "R$ 160,00",
+            "fotos": [
+                "images/produto1-foto1.jpg",
+                "images/produto1-foto2.jpg",
+                "images/produto1-foto3.jpg"
+            ],
+            "descricao": "Ração Premium sabor carne para cães de todas as idades. 15kg",
+            "fichaTecnica": {
+                "Peso": "15kg",
+                "Sabor": "Frango & Carne",
+                "Indicação": "Cães adultos",
+                "Marca": "PetPremium"
+            }
+        },
+        {
+            "id": 2,
+            "nome": "Ração Seca PremieR Pet Golden Special Cães Adultos Frango e Carne",
+            "Order1": "Cachorro",
+            "Order2": "Ração",
+            "Order3": "Seca",
+            "valor": "R$ 194,00",
+            "fotos": [
+                "images/produto2-foto1.jpg",
+                "images/produto2-foto2.jpg",
+                "images/produto2-foto3.jpg"
+            ],
+            "descricao": "Ração Seca PremieR Pet Golden Special Cães Adultos Frango e Carne",
+            "fichaTecnica": {
+                "Peso": "20kg",
+                "Sabor": "Frango & Carne",
+                "Indicação": "Cães adultos",
+                "Marca": "Golden"
+            }
+        },
+        {
+            "id": 3,
+            "nome": "Ração Úmida Suprema Cordeiro ao Molho para Cães Adultos de Raças Pequenas",
+            "Order1": "Cachorro",
+            "Order2": "Ração",
+            "Order3": "Umida",
+            "valor": "R$ 3,00",
+            "fotos": [
+                "images/produto3-foto1.jpg",
+                "images/produto3-foto2.jpg"
+            ],
+            "descricao": "Ração Úmida Suprema Cordeiro ao Molho para Cães Adultos de Raças Pequenas",
+            "fichaTecnica": {
+                "Peso": "100 g",
+                "Sabor": "Cordeiro ao Molho",
+                "Indicação": "Cães adultos",
+                "Marca": "Suprema"
+            }
+        },
+        {
+            "id": 4,
+            "nome": "Ração Úmida True Mixer Frango, Cenoura e Brócolis para Cães",
+            "Order1": "Cachorro",
+            "Order2": "Ração",
+            "Order3": "Umida",
+            "valor": "R$ 55,00",
+            "fotos": [
+                "images/produto4-foto1.jpg",
+                "images/produto4-foto2.jpg"
+            ],
+            "descricao": "Ração Úmida True Mixer Frango, Cenoura e Brócolis para Cães",
+            "fichaTecnica": {
+                "Peso": "960g",
+                "Sabor": "Frango, Cenoura e Brócolis",
+                "Indicação": "Cães adultos",
+                "Marca": "True"
+            }
+        },
+        {
+            "id": 5,
+            "nome": "Ração Seca True para Gatos Adultos Castrados",
+            "Order1": "Gato",
+            "Order2": "Ração",
+            "Order3": "Seca",            
+            "valor": "R$ 300,00",
+            "fotos": [
+                "images/produto5-foto1.jpg",
+                "images/produto5-foto2.jpg"
+            ],
+            "descricao": "Ração Seca True para Gatos Adultos Castrados",
+            "fichaTecnica": {
+                "Peso": "7kg",
+                "Sabor": "Frango e Vegetais",
+                "Indicação": "Gato",
+                "Marca": "True"
+            }
+        },
+        {
+            "id": 6,
+            "nome": "Ração Seca Nutrilus Pro+ Carne para Gatos Adultos",
+            "Order1": "Gato",
+            "Order2": "Ração",
+            "Order3": "Seca",   
+            "valor": "R$ 130,00",
+            "fotos": [
+                "images/produto6-foto1.jpg",
+                "images/produto6-foto2.jpg"
+            ],
+            "descricao": "Ração Seca Nutrilus Pro+ Carne para Gatos Adultos",
+            "fichaTecnica": {
+                "Peso": "10kg",
+                "Sabor": "Carne",
+                "Indicação": "Gato",
+                "Marca": "Nutrilus"
+            }
+        },
+        {
+            "id": 7,
+            "nome": "Ração Úmida Whiskas Sachê Frango ao Molho para Gatos Adultos",
+            "Order1": "Gato",
+            "Order2": "Ração",
+            "Order3": "Umida",   
+            "valor": "R$ 4,00",
+            "fotos": [
+                "images/produto7-foto1.jpg",
+                "images/produto7-foto2.jpg"
+            ],
+            "descricao": "Ração Úmida Whiskas Sachê Frango ao Molho para Gatos Adultos",
+            "fichaTecnica": {
+                "Peso": "85g",
+                "Sabor": "Frango",
+                "Indicação": "Gato",
+                "Marca": "Whiskas"
+            }
+        },
+        {
+            "id": 8,
+            "nome": "Ração Royal Canin Sachê Feline Sterilised para Gatos Castrados",
+            "Order1": "Gato",
+            "Order2": "Ração",
+            "Order3": "Umida",  
+            "valor": "R$ 13,00",
+            "fotos": [
+                "images/produto8-foto1.jpg",
+                "images/produto8-foto2.jpg"
+            ],
+            "descricao": "Ração Úmida Whiskas Sachê Frango ao Molho para Gatos Adultos",
+            "fichaTecnica": {
+                "Peso": "85g",
+                "Sabor": "Carne",
+                "Indicação": "Gato",
+                "Marca": "Royal Canin"
+            }
+        }
+    ]
+}

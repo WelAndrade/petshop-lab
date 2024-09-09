@@ -1,0 +1,219 @@
+/* Estilos básicos */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+/* Estilo do círculo com a inicial do usuário */
+.user-initials-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #6f42c1; /* Cor da letra dentro do círculo */
+    text-align: center;
+    font-size: 18px;
+}
+
+.user-initials-circle:hover {
+    background-color: #e2e2e2;
+}
+
+/* Search bar */
+.search-bar {
+    width: 600px; 
+    border-radius: 30px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; 
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link i {
+    font-size: 20px; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; 
+}
+
+
+.navbar-nav .nav-link span {
+    font-weight: normal;
+    color: #999;
+    margin-left: 5px;
+}
+
+/* Navbar categories menu */
+.categories-menu {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.categories-menu .nav-link {
+    font-weight: bold;
+    color: #555;
+    padding: 10px 15px;
+}
+
+.categories-menu .nav-link:hover {
+    color: #000;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f79e01, #ff3e00);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Multi-level dropdown styling */
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    margin-top: 0;
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu, .dropdown-submenu .dropdown-menu {
+    transition: all 0.3s ease;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none;
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Add right-facing arrow for submenus */
+.dropdown-item.dropdown-toggle::after {
+    content: '\203A'; 
+    margin-left: 5px;
+}
+
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    color: #777;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* Pet categories section */
+.pet-categories h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.pet-categories .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pet-categories .circle img {
+    width: 100%;
+    height: auto;
+}
+
+.pet-categories p {
+    font-weight: bold;
+    color: #333;
+    margin-top: -10px;
+}
+
+.pet-categories a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Sidebar de Categorias */
+.list-group-item {
+    border: none;
+}
+
+.category-toggle {
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.category-toggle:hover {
+    color: #007bff;
+}
+
+.list-group ul {
+    margin-left: 20px;
+}
+
+.collapse {
+    display: none;
+}
