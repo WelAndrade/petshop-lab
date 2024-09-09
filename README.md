@@ -27,3 +27,13 @@ Este é um projeto educacional desenvolvido para a criação de uma plataforma o
     busca.html     # Página de busca de produtos
     pdp.html       # Página de detalhes de produto
     servico.html   # Página de agendamento de serviços
+
+## Como Configurar o Envio de Formulários
+
+Este projeto utiliza o serviço **FormSubmit** para enviar dados de agendamento via e-mail. Para alterar o e-mail de destino, siga os passos abaixo:
+
+1. No arquivo `servico.html`, encontre o atributo `action` do formulário.
+2. Substitua o e-mail pelo seu endereço de e-mail.
+
+```html
+<form action="https://formsubmit.co/seu-email-aqui" method="POST">
